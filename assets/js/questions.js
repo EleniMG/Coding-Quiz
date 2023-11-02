@@ -1,4 +1,5 @@
 var startscreen = document.querySelector(".start")
+var questionSection = document.querySelector("questions")
 
 // Creating array of questions for quiz
 var questions = [
@@ -75,9 +76,11 @@ var questions = [
 
 function startQuestions(){
     // Once quiz starts, start screen needs to be removed
-    startscreen.textContent = ""
+    startscreen.setAttribute("class", "hide")
 
     // Create container for question and answer options
+    questionSection.setAttribute("class", "none");
+
     // Insert questions and answer options into container
     // Set data attributes for the correct and incorrect answers
     // Add an event listener for when the user makes a selection
