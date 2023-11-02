@@ -8,9 +8,10 @@ var secondsLeft = 60;
 function startQuiz(){
     // Timer will need to start
         startTimer();
-        startQuestions();
 
     // Questions will need to appear on the page
+        startQuestions();
+
 }
 
 function startTimer() {

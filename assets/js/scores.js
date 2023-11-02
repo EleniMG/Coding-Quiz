@@ -1,0 +1,1 @@
+// Use local storage to keep the top score if it is higher
