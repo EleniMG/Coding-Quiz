@@ -1,5 +1,6 @@
 var startButton = document.querySelector('#start');
 var timerElement = document.querySelector('#time');
+var endScreen = document.querySelector('#end-screen');
 
 startButton.addEventListener('click', startQuiz)
 
@@ -21,12 +22,12 @@ function startTimer() {
 
         if(secondsLeft === 0){
             clearInterval(timerInterval);
-            timeRanOut();
+            gameOver();
         }
     }, 1000);
 }
 
 
-function timeRanOut(){
-    alert("Uh oh! Time's up! Better luck next time 😊")
+function gameOver(){
+    endScreen.setAttribute("class", "none");
 }
