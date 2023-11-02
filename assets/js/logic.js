@@ -1,14 +1,13 @@
 var startButton = document.querySelector('#start');
 var timerElement = document.querySelector('#time');
 
-document.addEventListener('click', startQuiz())
+startButton.addEventListener('click', startQuiz())
 
 var secondsLeft = 30;
 
 function startQuiz(){
     // Timer will need to start
-    console.log("PLEASE START TIME")
-    startTimer();
+        startTimer();
 
     // Questions will need to appear on the page
 }
