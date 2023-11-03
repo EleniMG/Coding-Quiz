@@ -1,5 +1,11 @@
 var startscreen = document.querySelector(".start")
-var questionSection = document.querySelector("questions")
+var questionSection = document.querySelector("#questions")
+var questionTitle = document.querySelector('#question-title')
+var choices = document.querySelector('#choices')
+var answer1 = document.body.children[2].children[1].children[1].appendChild(document.createElement("div"));
+var answer2 = document.body.children[2].children[1].children[1].appendChild(document.createElement("div"));
+var answer3 = document.body.children[2].children[1].children[1].appendChild(document.createElement("div"));
+var answer4 = document.body.children[2].children[1].children[1].appendChild(document.createElement("div"));
 
 // Creating array of questions for quiz
 var questions = [
@@ -82,10 +88,11 @@ function startQuestions(){
     questionSection.setAttribute("class", "none");
 
     // Insert questions and answer options into container
+    // Screen will need to display the next question - for loop?
     // Set data attributes for the correct and incorrect answers
     // Add an event listener for when the user makes a selection
     // Functions to deal with correct or incorrect answer consequences i.e. time reduction or not - maybe an animation?
-    // Screen will need to display the next question
+    
 }
 
 // When questions run out, will need a congratulations screen, then allow user to save their name and score on highscores page
