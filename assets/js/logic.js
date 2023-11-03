@@ -29,5 +29,6 @@ function startTimer() {
 
 
 function gameOver(){
+    questionSection.setAttribute("class", "hide")
     endScreen.setAttribute("class", "none");
 }

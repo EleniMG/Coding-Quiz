@@ -3,10 +3,10 @@ var questionSection = document.querySelector("#questions")
 var questionTitle = document.querySelector('#question-title')
 var choices = document.querySelector('#choices');
 var answerOptions = document.querySelector(".answer-option")
-var answer1 = document.body.children[2].children[1].children[1].appendChild(document.createElement("div"));
-var answer2 = document.body.children[2].children[1].children[1].appendChild(document.createElement("div"));
-var answer3 = document.body.children[2].children[1].children[1].appendChild(document.createElement("div"));
-var answer4 = document.body.children[2].children[1].children[1].appendChild(document.createElement("div"));
+var answer1 = document.body.children[2].children[1].children[1].appendChild(document.createElement("button"));
+var answer2 = document.body.children[2].children[1].children[1].appendChild(document.createElement("button"));
+var answer3 = document.body.children[2].children[1].children[1].appendChild(document.createElement("button"));
+var answer4 = document.body.children[2].children[1].children[1].appendChild(document.createElement("button"));
 
 answer1.setAttribute("style", "class:answer-option; id:answer1; background-color: lightcoral; border:solid; border-radius: 7px; margin-top: 10px; padding: 10px");
 answer2.setAttribute("style", "class:answer-option; id:answer2; background-color: lightcoral; border:solid; border-radius: 7px; margin-top: 10px; padding: 10px");
@@ -99,21 +99,23 @@ function startQuestions(){
     // Screen will need to display the next question
     // For loop/for each to assign the questions and answer options to their places, set their class to hide
 
-    questions.forEach(function(element){
-        questionTitle.textContent = element.question;
-        answer1.textContent = element.answer1;
-        answer2.textContent = element.answer2;
-        answer3.textContent = element.answer3;
-        answer4.textContent = element.answer4;
+}
+questions.forEach(function placeQandA(element){
+    questionTitle.textContent = element.question;
+    answer1.textContent = element.answer1;
+    answer2.textContent = element.answer2;
+    answer3.textContent = element.answer3;
+    answer4.textContent = element.answer4;
+})
 
-    })
     // Set an event listener to go through array and show one question at a time
+
+
     
     // Set data attributes for the correct and incorrect answers
     // Add an event listener for when the user makes a selection
     // Functions to deal with correct or incorrect answer consequences i.e. time reduction or not - maybe an animation?
     
-}
 
 
 // When questions run out, will need a congratulations screen, then allow user to save their name and score on highscores page
