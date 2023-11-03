@@ -93,11 +93,24 @@ function startQuestions(){
     questionSection.setAttribute("class", "none");
 
     // Insert questions and answer options into container
-    // Screen will need to display the next question - for loop?
+    // Screen will need to display the next question
+    // For loop/for each to assign the questions and answer options to their places, set their class to hide
+
+    questions.forEach(function(element){
+        questionTitle.textContent = element.question;
+        answer1.textContent = element.answer1;
+        answer2.textContent = element.answer2;
+        answer3.textContent = element.answer3;
+        answer4.textContent = element.answer4;
+
+    })
+    // Set an event listener to go through array and show one question at a time
+    
     // Set data attributes for the correct and incorrect answers
     // Add an event listener for when the user makes a selection
     // Functions to deal with correct or incorrect answer consequences i.e. time reduction or not - maybe an animation?
     
 }
+
 
 // When questions run out, will need a congratulations screen, then allow user to save their name and score on highscores page
