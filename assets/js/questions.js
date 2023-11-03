@@ -7,10 +7,10 @@ var answer2 = document.body.children[2].children[1].children[1].appendChild(docu
 var answer3 = document.body.children[2].children[1].children[1].appendChild(document.createElement("div"));
 var answer4 = document.body.children[2].children[1].children[1].appendChild(document.createElement("div"));
 
-answer1.setAttribute("class", "answer-option");
-answer2.setAttribute("class", "answer-option")
-answer3.setAttribute("class", "answer-option")
-answer4.setAttribute("class", "answer-option")
+answer1.setAttribute("style", "class:answer-option; id:answer1");
+answer2.setAttribute("style", "class:answer-option; id:answer2");
+answer3.setAttribute("style", "class:answer-option; id:answer3");
+answer4.setAttribute("style", "class:answer-option; id:answer4");
 
 // Creating array of questions for quiz
 var questions = [
