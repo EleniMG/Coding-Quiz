@@ -1,16 +1,19 @@
 var startscreen = document.querySelector(".start")
 var questionSection = document.querySelector("#questions")
 var questionTitle = document.querySelector('#question-title')
-var choices = document.querySelector('#choices')
+var choices = document.querySelector('#choices');
+var answerOptions = document.querySelector(".answer-option")
 var answer1 = document.body.children[2].children[1].children[1].appendChild(document.createElement("div"));
 var answer2 = document.body.children[2].children[1].children[1].appendChild(document.createElement("div"));
 var answer3 = document.body.children[2].children[1].children[1].appendChild(document.createElement("div"));
 var answer4 = document.body.children[2].children[1].children[1].appendChild(document.createElement("div"));
 
-answer1.setAttribute("style", "class:answer-option; id:answer1");
-answer2.setAttribute("style", "class:answer-option; id:answer2");
-answer3.setAttribute("style", "class:answer-option; id:answer3");
-answer4.setAttribute("style", "class:answer-option; id:answer4");
+answer1.setAttribute("style", "class:answer-option; id:answer1; background-color: lightcoral; border:solid; border-radius: 7px; margin-top: 10px; padding: 10px");
+answer2.setAttribute("style", "class:answer-option; id:answer2; background-color: lightcoral; border:solid; border-radius: 7px; margin-top: 10px; padding: 10px");
+answer3.setAttribute("style", "class:answer-option; id:answer3; background-color: lightcoral; border:solid; border-radius: 7px; margin-top: 10px; padding: 10px");
+answer4.setAttribute("style", "class:answer-option; id:answer4; background-color: lightcoral; border:solid; border-radius: 7px; margin-top: 10px; padding: 10px");
+
+
 
 // Creating array of questions for quiz
 var questions = [
