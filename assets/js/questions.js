@@ -3,6 +3,7 @@ var questionSection = document.querySelector("#questions");
 var questionTitle = document.querySelector("#question-title");
 var choices = document.querySelector("#choices");
 var answerOptions = document.querySelector(".answer-option");
+var feedbackSection = document.querySelector(".feedback");
 
 // answer1.setAttribute("style", "class:answer-option; id:answer1; background-color: lightcoral; border:solid; border-radius: 7px; margin-top: 10px; padding: 10px");
 // answer2.setAttribute("style", "class:answer-option; id:answer2; background-color: lightcoral; border:solid; border-radius: 7px; margin-top: 10px; padding: 10px");
@@ -266,13 +267,18 @@ function displayQandAs(questionId) {
     button.textContent = answer.value;
     button.setAttribute("data-answer", answer.correct);
     button.classList.add("answer-option");
+    button.addEventListener("click", userSelection);
   });
 }
 
 // Set an event listener to go through array and show one question at a time
-
-// Set data attributes for the correct and incorrect answers
 // Add an event listener for when the user makes a selection
 // Functions to deal with correct or incorrect answer consequences i.e. time reduction or not - maybe an animation?
+
+function userSelection(event) {
+  if (choices.event.correct === true) {
+    console.log("this is true");
+  }
+}
 
 // When questions run out, will need a congratulations screen, then allow user to save their name and score on highscores page
