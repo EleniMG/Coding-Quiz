@@ -7,9 +7,16 @@ console.log(playerDetailsArray, playerDetailsArray.length);
 
 var highscoreBoard = document.querySelector("#highscores");
 
+function sortHighscores(a, b) {
+  return b.score - a.score;
+}
+
+var sortedScores = playerDetailsArray.sort(sortHighscores);
+console.log(sortedScores);
+
 function displayHighscores() {
-  for (var i = 0; i < playerDetailsArray.length; i++) {
-    var player = playerDetailsArray[i];
+  for (var i = 0; i < sortedScores.length; i++) {
+    var player = sortedScores[i];
 
     var li = document.createElement("li");
     li.textContent = player.initials + ", " + player.score;
