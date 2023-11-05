@@ -32,6 +32,7 @@ function gameOver() {
   endScreen.setAttribute("class", "none");
 }
 
+var allPlayerDetails = [];
 var initialsEntered = document.querySelector("#initials");
 var initialsSubmitButton = document
   .querySelector("#submit")
@@ -42,5 +43,6 @@ var initialsSubmitButton = document
       score: secondsLeft,
     };
 
-    localStorage.setItem("playerDetails", JSON.stringify(playerDetails));
+    allPlayerDetails.push(playerDetails);
+    localStorage.setItem("allPlayerDetails", JSON.stringify(allPlayerDetails));
   });
