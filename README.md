@@ -30,9 +30,23 @@ The following third-party assets were used to assist with this code:
 
 [Array.prototype.forEach() - MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/forEach)
 
-[Document:querySelector() - MDN](https://developer.mozilla.org/en-US/docs/Web/API/Document/querySelector)
+[Document:querySelector() method - MDN](https://developer.mozilla.org/en-US/docs/Web/API/Document/querySelector)
 
 [Using data attributes - MDN](https://developer.mozilla.org/en-US/docs/Learn/HTML/Howto/Use_data_attributes)
+
+[EventTarget: addEventListener() method - MDN](https://developer.mozilla.org/en-US/docs/Web/API/EventTarget/addEventListener)
+
+[Element: setAttribute() method](https://developer.mozilla.org/en-US/docs/Web/API/Element/setAttribute)
+
+[Document: createElement() method - MDN](https://developer.mozilla.org/en-US/docs/Web/API/Document/createElement)
+
+[HTML DOM Document addEventListener() - W3Schools](https://www.w3schools.com/jsref/met_document_addeventlistener.asp)
+
+[HTML DOM Document createElement() - W3Schools](https://www.w3schools.com/jsref/met_document_createelement.asp)
+
+[HTML DOM parentElement Property - W3Schools](https://www.w3schools.com/jsref/prop_node_parentelement.asp)
+
+[HTML DOM Element appendChild() - W3Schools](https://www.w3schools.com/jsref/met_node_appendchild.asp)
 
 [HTML DOM Element className - W3Schools](https://www.w3schools.com/jsref/prop_html_classname.asp)
 
