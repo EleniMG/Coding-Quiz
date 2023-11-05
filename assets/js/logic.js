@@ -32,8 +32,9 @@ function gameOver() {
   endScreen.setAttribute("class", "none");
 }
 // Need to retrieve the array of player details from storage so that it is not overwritten with an empty array
+
 var playerDetailsFromStorage = localStorage.getItem("allPlayerDetails");
-var allPlayerDetails = JSON.parse(playerDetailsFromStorage);
+var allPlayerDetails = JSON.parse(playerDetailsFromStorage) || [];
 var initialsEntered = document.querySelector("#initials");
 var initialsSubmitButton = document
   .querySelector("#submit")

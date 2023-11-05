@@ -18,3 +18,10 @@ function displayHighscores() {
 }
 
 displayHighscores();
+
+var scoreClearer = document.querySelector("#clear");
+scoreClearer.addEventListener("click", function (event) {
+  event.preventDefault();
+  highscoreBoard.textContent = "";
+  window.localStorage.removeItem("allPlayerDetails");
+});
