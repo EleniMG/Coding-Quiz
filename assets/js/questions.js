@@ -288,5 +288,11 @@ function userSelection(event) {
       secondsLeft = secondsLeft - 10;
     }
   }
+
+  var nextQuestionId = Number(questionSection.dataset.questionId) + 1;
+  questionSection.setAttribute("data-question-id", nextQuestionId);
+  choices.textContent = "";
+  displayQandAs(nextQuestionId);
 }
+
 // When questions run out, will need a congratulations screen, then allow user to save their name and score on highscores page

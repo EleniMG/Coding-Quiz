@@ -4,7 +4,7 @@ var endScreen = document.querySelector("#end-screen");
 
 startButton.addEventListener("click", startQuiz);
 
-var secondsLeft = 60;
+var secondsLeft = 120;
 
 function startQuiz() {
   // Timer will need to start
