@@ -31,3 +31,16 @@ function gameOver() {
   feedbackSection.setAttribute("class", "hide");
   endScreen.setAttribute("class", "none");
 }
+
+var initialsEntered = document.querySelector("#initials");
+var initialsSubmitButton = document
+  .querySelector("#submit")
+  .addEventListener("click", function (event) {
+    event.preventDefault();
+    var playerDetails = {
+      initials: initialsEntered.value.trim(),
+      score: secondsLeft,
+    };
+
+    localStorage.setItem("playerDetails", JSON.stringify(playerDetails));
+  });
