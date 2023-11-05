@@ -275,9 +275,17 @@ function displayQandAs(questionId) {
 // Add an event listener for when the user makes a selection
 // Functions to deal with correct or incorrect answer consequences i.e. time reduction or not - maybe an animation?
 
-function userSelection() {
-  feedbackSection.setAttribute("class", "feedback");
-  feedbackSection.textContent = "Hello";
-}
+function userSelection(event) {
+  var element = event.target;
 
+  if (element.matches("button")) {
+    feedbackSection.setAttribute("class", "feedback");
+
+    if (element.dataset.answer == "true") {
+      feedbackSection.textContent = "Correct!";
+    } else {
+      feedbackSection.textContent = "Incorrect!";
+    }
+  }
+}
 // When questions run out, will need a congratulations screen, then allow user to save their name and score on highscores page
