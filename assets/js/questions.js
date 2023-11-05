@@ -285,6 +285,7 @@ function userSelection(event) {
       feedbackSection.textContent = "Correct!";
     } else {
       feedbackSection.textContent = "Incorrect!";
+      secondsLeft = secondsLeft - 10;
     }
   }
 }
