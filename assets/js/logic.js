@@ -53,5 +53,8 @@ var initialsSubmitButton = document
         "allPlayerDetails",
         JSON.stringify(allPlayerDetails)
       );
+      feedbackSection.setAttribute("class", "feedback");
+      feedbackSection.textContent =
+        "Submitted! Don't forget to check out your place on the leaderboard";
     }
   });
