@@ -44,6 +44,13 @@ var initialsSubmitButton = document
       score: secondsLeft,
     };
 
-    allPlayerDetails.push(playerDetails);
-    localStorage.setItem("allPlayerDetails", JSON.stringify(allPlayerDetails));
+    if (playerDetails.initials === "") {
+      alert("Please enter your intitials");
+    } else {
+      allPlayerDetails.push(playerDetails);
+      localStorage.setItem(
+        "allPlayerDetails",
+        JSON.stringify(allPlayerDetails)
+      );
+    }
   });
