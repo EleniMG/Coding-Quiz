@@ -38,7 +38,13 @@ The following third-party assets were used to assist with this code:
 
 [Element: setAttribute() method](https://developer.mozilla.org/en-US/docs/Web/API/Element/setAttribute)
 
+[String.prototype.trim() - MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/trim)
+
+[JSON.parse() - MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON/parse)
+
 [Document: createElement() method - MDN](https://developer.mozilla.org/en-US/docs/Web/API/Document/createElement)
+
+[Storage: removeItem() method - MDN](https://developer.mozilla.org/en-US/docs/Web/API/Storage/removeItem)
 
 [HTML DOM Document addEventListener() - W3Schools](https://www.w3schools.com/jsref/met_document_addeventlistener.asp)
 
@@ -50,4 +56,10 @@ The following third-party assets were used to assist with this code:
 
 [HTML DOM Element className - W3Schools](https://www.w3schools.com/jsref/prop_html_classname.asp)
 
+[preventDefault() Event Method - W3Schools](https://www.w3schools.com/jsref/event_preventdefault.asp)
+
 [How to dynamically create and apply CSS class in Javascript? - Geeks for Geeks](https://www.geeksforgeeks.org/how-to-dynamically-create-and-apply-css-class-in-javascript/)
+
+[How to sort by object property in JavaScript - byby.dev](https://byby.dev/js-sort-by-object-property)
+
+[Storing and retrieving JavaScript objects in localStorage - LogRocket](https://blog.logrocket.com/storing-retrieving-javascript-objects-localstorage/)
