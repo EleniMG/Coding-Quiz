@@ -5,11 +5,6 @@ var choices = document.querySelector("#choices");
 var answerOptions = document.querySelector(".answer-option");
 var feedbackSection = document.querySelector(".feedback");
 
-// answer1.setAttribute("style", "class:answer-option; id:answer1; background-color: lightcoral; border:solid; border-radius: 7px; margin-top: 10px; padding: 10px");
-// answer2.setAttribute("style", "class:answer-option; id:answer2; background-color: lightcoral; border:solid; border-radius: 7px; margin-top: 10px; padding: 10px");
-// answer3.setAttribute("style", "class:answer-option; id:answer3; background-color: lightcoral; border:solid; border-radius: 7px; margin-top: 10px; padding: 10px");
-// answer4.setAttribute("style", "class:answer-option; id:answer4; background-color: lightcoral; border:solid; border-radius: 7px; margin-top: 10px; padding: 10px");
-
 // Creating array of questions for quiz
 var questions = [
   {
@@ -244,7 +239,7 @@ function startQuestions() {
   // Once quiz starts, start screen needs to be removed
   startscreen.setAttribute("class", "hide");
 
-  // Create container for question and answer options
+  // Show container for question and answer options
   questionSection.setAttribute("class", "none");
 
   displayQandAs(questionId);
@@ -252,13 +247,18 @@ function startQuestions() {
 
 // Insert questions and answer options into container
 // Screen will need to display the next question
-// For loop/for each to assign the questions and answer options to their places, set their class to hide
 
 function getQuestionOptions(id) {
   return questions.find((question) => question.id === id);
 }
 
 function displayQandAs(questionId) {
+  // When questions run out, will need a congratulations screen, then allow user to save their name and score on highscores page
+  // Check whether the ID is more than the length of the array, therefore does not exist, which will need to be checked first
+  if (questionId >= questions.length) {
+    gameOver();
+    return;
+  }
   var questionOptions = getQuestionOptions(questionId);
 
   questionTitle.textContent = questionOptions.question;
@@ -294,5 +294,3 @@ function userSelection(event) {
   choices.textContent = "";
   displayQandAs(nextQuestionId);
 }
-
-// When questions run out, will need a congratulations screen, then allow user to save their name and score on highscores page
