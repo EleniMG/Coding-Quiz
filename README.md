@@ -34,6 +34,8 @@ The following third-party assets were used to assist with this code:
 
 [Using data attributes - MDN](https://developer.mozilla.org/en-US/docs/Learn/HTML/Howto/Use_data_attributes)
 
+[HTMLElement: dataset property - MDN](https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/dataset)
+
 [EventTarget: addEventListener() method - MDN](https://developer.mozilla.org/en-US/docs/Web/API/EventTarget/addEventListener)
 
 [Element: setAttribute() method](https://developer.mozilla.org/en-US/docs/Web/API/Element/setAttribute)
