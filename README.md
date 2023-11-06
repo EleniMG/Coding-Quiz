@@ -11,14 +11,31 @@ N/A
 
 ## Usage
 
-Visit the [XXXXX]() webpage.
-
 Instructions:
 
-Screenshots:
-Please see the following screenshot as an example:
+Visit the [Coding Quiz](https://elenimg.github.io/Coding-Quiz/) webpage.
 
-![]()
+Click the 'Start Quiz' button to begin
+
+Coding related questions will appear and you will need to answer all of them before the time runs out! If you get any questions wrong, 10 seconds will be deducted. Your final score will be the remaining amount of time.
+
+Once you have finished the quiz, you have the option to add your initials and score to the leaderboard. Please ensure that you enter at least one initial as otherwise your score will not save.
+
+To visit the leaderboard, click 'View Highscores' in the top left corner. Here, you can view the leaderboard as it stands or you can clear the scores to start from scratch!
+
+Please see the following screenshots to see how the page works:
+
+![Question and Feedback displayed](assets/Screenshots/Screenshot%201.png)
+
+![End of Quiz](assets/Screenshots/Screenshot%202.png)
+
+![Error mesage when no initials entered](assets/Screenshots/Screenshot%203.png)
+
+![Player initials submission message](assets/Screenshots/Screenshot%204.png)
+
+![Highscore Leaderboard with entries](assets/Screenshots/Screenshot%205.png)
+
+![Highscore Leaderboard after it is cleared](assets/Screenshots/Screenshot%206.png)
 
 ## Credits
 
