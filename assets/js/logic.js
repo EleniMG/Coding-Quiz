@@ -19,7 +19,10 @@ function startTimer() {
     secondsLeft--;
     timerElement.textContent = secondsLeft;
 
-    if (secondsLeft <= 0) {
+    if (
+      secondsLeft <= 0 ||
+      questionSection.dataset.questionId >= questions.length
+    ) {
       clearInterval(timerInterval);
       gameOver();
     }
@@ -31,8 +34,8 @@ function gameOver() {
   feedbackSection.setAttribute("class", "hide");
   endScreen.setAttribute("class", "none");
 }
-// Need to retrieve the array of player details from storage so that it is not overwritten with an empty array
 
+// Need to retrieve the array of player details from storage so that it is not overwritten with an empty array
 var playerDetailsFromStorage = localStorage.getItem("allPlayerDetails");
 var allPlayerDetails = JSON.parse(playerDetailsFromStorage) || [];
 var initialsEntered = document.querySelector("#initials");
