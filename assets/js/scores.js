@@ -1,7 +1,7 @@
 // Use local storage to retrieve the initials and score
 var allPlayerDetails = window.localStorage.getItem("allPlayerDetails");
 var playerDetailsArray = JSON.parse(allPlayerDetails);
-console.log(playerDetailsArray, playerDetailsArray.length);
+// console.log(playerDetailsArray, playerDetailsArray.length);
 
 // Show these details on screen as a new list item
 
@@ -12,7 +12,7 @@ function sortHighscores(a, b) {
 }
 
 var sortedScores = playerDetailsArray.sort(sortHighscores);
-console.log(sortedScores);
+// console.log(sortedScores);
 
 function displayHighscores() {
   for (var i = 0; i < sortedScores.length; i++) {
