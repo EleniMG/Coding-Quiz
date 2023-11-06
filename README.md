@@ -2,7 +2,7 @@
 
 ## Description
 
-My aim with this project was to create a quiz using JavaScript, DOM manipulation and local storage within the browser. This project gave me further experience in evaluating each step I need to take when developing each part of my webpage. I learned how to use JSON.stringify and JSON.parse to transfer data to and from the local storage, but also between JavaScript files. I also learned to account for all kinds of situations, such as the user not typing in their initials and incurring a time penalty when an incorrect answer is clicked. One major lesson learned is using the console and data attributes to check variables being passed through functions when functions are not working as I would like them to.
+My aim with this project was to create a quiz using JavaScript, DOM manipulation and local storage within the browser. This project gave me further experience in evaluating each step I need to take when developing each part of my webpage. I learned how to use JSON.stringify and JSON.parse to transfer data to and from the local storage, but also between JavaScript files, and using setInterval to create a timer for my quiz. I also learned to account for all kinds of situations, such as the user not typing in their initials and incurring a time penalty when an incorrect answer is clicked. One major lesson learned is using the console and data attributes to check variables being passed through functions when functions are not working as I would like them to.
 
 ## Installation
 
